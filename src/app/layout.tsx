@@ -1,6 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Roboto_Flex as RobotoFlex } from 'next/font/google';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 const robotoFlex = RobotoFlex({
   subsets: ['latin'],
@@ -19,8 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${robotoFlex.variable} bg-slate-900 text-cyan-300`}>
+      <body
+        className={`${robotoFlex.variable} flex min-h-screen w-screen flex-col overflow-hidden bg-slate-900 text-cyan-300`}
+      >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
