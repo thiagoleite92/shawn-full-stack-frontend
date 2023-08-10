@@ -65,10 +65,10 @@ export default function Page({ params: { username } }: ProfileProps) {
             </div>
 
             <div className="flex flex-col justify-start gap-4 ">
-              {userDetails?.email && (
+              {userDetails?.id && (
                 <span className="flex gap-4">
-                  <strong>Email: </strong>
-                  {userDetails?.email}
+                  <strong>ID: </strong>
+                  {userDetails?.id}
                 </span>
               )}
 

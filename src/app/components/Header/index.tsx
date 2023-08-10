@@ -7,8 +7,6 @@ import { BsArrowLeft, BsGithub } from 'react-icons/bs';
 export default function Header() {
   const pathname = usePathname();
 
-  console.log(pathname);
-
   return (
     <header className="flex items-center justify-evenly gap-4 border-b border-cyan-600  py-4 text-lg ">
       {pathname === '/' ? (
