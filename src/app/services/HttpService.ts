@@ -2,8 +2,7 @@ import axios, { AxiosInstance, AxiosResponse } from 'axios';
 
 export class HttpService {
   private axios: AxiosInstance;
-  // private baseURL = process.env.NEXT_PUBLIC_API_URL;
-  private baseURL = process.env.NEXT_PUBLIC_API_URL_LOCAL;
+  private baseURL = process.env.NEXT_PUBLIC_API_URL;
 
   constructor() {
     this.axios = axios.create({
