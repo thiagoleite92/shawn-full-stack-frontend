@@ -2,7 +2,8 @@ import axios, { AxiosInstance, AxiosResponse } from 'axios';
 
 export class HttpService {
   private axios: AxiosInstance;
-  private baseURL = 'https://github-proxy-rbq4.onrender.com/api';
+  // private baseURL = process.env.NEXT_PUBLIC_API_URL;
+  private baseURL = process.env.NEXT_PUBLIC_API_URL_LOCAL;
 
   constructor() {
     this.axios = axios.create({
